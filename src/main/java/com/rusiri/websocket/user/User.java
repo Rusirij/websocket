@@ -1,6 +1,7 @@
 package com.rusiri.websocket.user;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Getter;
@@ -15,14 +16,8 @@ public class User {
     private String nickName;
 
     private String fullName;
-    
     private Status status;
 
-    public User(String nickName, String fullName, Status status) {
-        this.nickName = nickName;
-        this.fullName = fullName;
-        this.status = status;
-    }
 
     
 }

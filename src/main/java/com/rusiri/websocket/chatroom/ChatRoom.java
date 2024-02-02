@@ -14,7 +14,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document
+@Document("ChatRoom")
 public class ChatRoom {
 
     @Id

@@ -10,23 +10,22 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class UserService {
 
-    private final UserRepository repo;
+    private final UserRepository repository;
 
-    public void saveUser(User user){
+    public void saveUser(User user) {
         user.setStatus(Status.ONLINE);
-        repo.save(user);
+        repository.save(user);
     }
-    
-    public void disconnect(User user){
-        var storedUser = repo.findById(user.getNickName()).orElse(null);
+
+    public void disconnect(User user) {
+        var storedUser = repository.findById(user.getNickName()).orElse(null);
         if (storedUser != null) {
             storedUser.setStatus(Status.OFFLINE);
-            repo.save(storedUser);
+            repository.save(storedUser);
         }
-
     }
 
-    public List<User> findConnectedUsers(){        
-        return repo.findAllByStatus(Status.ONLINE);
+    public List<User> findConnectedUsers() {
+        return repository.findAllByStatus(Status.ONLINE);
     }
 }
