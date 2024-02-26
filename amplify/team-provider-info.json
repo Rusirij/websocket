@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-websocket-dev-140722-authRole",
+      "UnauthRoleArn": "arn:aws:iam::471112548073:role/amplify-websocket-dev-140722-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::471112548073:role/amplify-websocket-dev-140722-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-websocket-dev-140722-deployment",
+      "UnauthRoleName": "amplify-websocket-dev-140722-unauthRole",
+      "StackName": "amplify-websocket-dev-140722",
+      "StackId": "arn:aws:cloudformation:us-east-2:471112548073:stack/amplify-websocket-dev-140722/46602850-d4da-11ee-b97c-021a62543d1b",
+      "AmplifyAppId": "d3b2ks7z00jl06"
+    }
+  }
+}
